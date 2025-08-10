@@ -1,174 +1,159 @@
-    <!DOCTYPE html>
-    <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Redel Lounge</title>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <nav>
-                    <ul class="menu">
-                        <li class="menu_items"><a href="#" class="menu_link"><img class="logot" src="../src/img/logo.png" alt=""></a></li>
-                        <li class="menu_items"><a href="#m1" class="menu_link">Меню</a></li>
-                        <li class="menu_items"><a href="#g1" class="menu_link">Галерея</a></li>
-                        <li class="menu_items"><a href="#g2" class="menu_link">Расположение</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section class="promo">
-            <div class="container">
-                <div class="first col-md-10 offset-md-1">
-                    <div class="row">
-                        <h1 class="nach">Rebel Lounge</h1>
-                        <h2 class="nach2">Приглашает вас в гости!</h2>
-                        <br>
-                        <br>
-                        <div class="text-nach">
-                            Команда Rebel встретит вас в непринужденной атмосфере, профессиональные мастера,широкий ассортимент табачных смесей для кальянов и искусство отдыха, которое поразит в самую душу. Здесь Вы сможете отдохнуть от суеты, встретиться с друзьями и просто хорошо провести время.
-                            <br>
-                            <br>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiningDominion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="MiningDominion">
+    <nav id="nav-menu">
+        <a href="#vhod">Личный кабинет</a>
+        <a href="#about">О нас</a>
+        <a href="#stats">Показатели</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    <div class="burger" id="burger-menu">
+        ☰
+    </div>
+</header>
+
+<!-- Главный экран -->
+<section class="hero">
+    <h1>MiningDominion</h1>
+    <p>Майнинг без воды. Только мощь и честные цифры.
+        Интересно? Установи свое оборудование!
+    </p>
+    <button >Оставить заявку</button>
+</section>
+
+<!-- О нас -->
+<section id="about" class="section">
+    <h2>О нас</h2>
+    <p>Мы качаем крипту на Whatsminer M32, пока другие кормят тебя байками. У нас реальный хэшрейт, честная статистика и холодный расчёт.</p>
+</section>
+
+<!-- Виджет показателей -->
+<section id="stats" class="section">
+    <h2>Текущие показатели</h2>
+    <div class="widget">
+        <div>
+            <h3>Хэшрейт</h3>
+            <p id="hashrate">Загрузка...</p>
+        </div>
+        <div>
+            <h3>Температура</h3>
+            <p id="temperature">Загрузка...</p>
+        </div>
+        <div>
+            <h3>Статус</h3>
+            <p id="status">Загрузка...</p>
+        </div>
+        <div>
+            <h3>Доход/сутки</h3>
+            <p id="income">Загрузка...</p>
+        </div>
+    </div>
+</section>
+
+<!-- Для клиентов -->
+<section id="about" class="section">
+    <h2>Что мы предоставляем</h2>
+    <p>Наша компания гарантирует комплексное обслуживание и поддержку вашей майнинговой фермы, обеспечивая:</p>
+
+        <p>1.Защиту и безопасность — мы принимаем все необходимые меры для защиты вашего оборудования и данных, создавая безопасные условия для работы.</p>
+        <p>2.Стабильную работу оборудования — благодаря современным технологиям и регулярному техническому обслуживанию, мы обеспечиваем бесперебойную и эффективную работу вашей майнинговой установки.</p>
+            <p>3.Профессиональное обслуживание — наши специалисты проводят профилактику, ремонт и настройку оборудования, чтобы оно всегда функционировало на максимальной мощности.</p>
+                <p> 4.Конфиденциальность — мы строго соблюдаем политику конфиденциальности, защищая ваши данные и информацию о работе фермы.</p>
+                    <p>5.Круглосуточную поддержку — наша команда всегда готова помочь вам в любое время дня и ночи, оперативно реагируя на любые вопросы или проблемы.</p>
+                    <p>6.Отслеживание работы оборудования — с помощью современных систем мониторинга вы можете в реальном времени контролировать состояние и эффективность работы вашей фермы.</p>
+</section>
+
+<section id="vhod" class="vhod">
+<button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#flipFlop">Создать личный кабинет</button>
+
+    <div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="login-box">
+                    <h2>Login</h2>
+                    <form>
+                        <div class="user-box">
+                            <input type="text" name="" required="">
+                            <label>Имя</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" name="" required="">
+                            <label>Логин</label>
                         </div>
 
-                        <div class="btnpoz">
-                            <button type="button" class="btn btn-dark"><a href="tel: 89333047799" class="callnum" class="col-md-2">забронировать стол</a></button>
-                            
-
+                        <div class="user-box">
+                            <input type="password" name="" required="">
+                            <label>Пароль</label>
                         </div>
-                        <div class="text-str">узнать больше о нас</div>
-                        <img class="strelka" src="img\str.png" alt="strelka">
+                        <a href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Зарегистрировать
+                        </a>
+                    </form>
                     </div>
-                </div>
             </div>
-        </section>
-        
-        <section class="soder">
-            <div class="lin"></div>
-            <div class="container">
-                <div class="first col-md-10 offset-md-1">
-                    <h1 id="m1" class="nach22">меню</h1>
-                    <div class="text-nach22">
-                        <br>
-                        <br>
-                        <br>
-                        Бизнес-кальян........................... 600руб
-                        <br>
-                        <br>
-                        Кальян ....................... 800руб
-                        <br>
-                        <br>
-                        2-й кальян ............................... 700руб
-                        <br>
-                        <br>
-                        Сет из 3 кальянов ........................ 1800руб
-                        <br>
-                        <br>
-                        Кальян в день рождение (при предьявлении документа).................... 640руб
-                        <br>
-                        <br>
-                        Авторсикй чай .............................. 250руб
-                        <br>
-                        <br>
-                        Чай.............. 150руб
-                        <br>
-                        <br>
-                        Прохладительные напитки ............................. 80руб
-                        <br>
-                        <br>
-                        Лимонад Натахтари......................... 120руб
-                        <br>
-                        <br>
-                        Пробковый сбор с крепких напитков   (вино,шампанское без пробкового сбора, ПИВО И ВОДКУ НЕЛЬЗЯ СОВСЕМ, ДАЖЕ ПО БРАТСКИ :) .............. 300руб/бутылка
-                    </div>
-                </div>
-            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-        </section>
-        <section class="galer">
-            <div class="lin"></div>
-            <div class="container">
-                <div class="first col-md-10 offset-md-1">
-                    <h1 id="g1" class="nach22">Галерея</h1>
-                    <br>
-                    <br>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="../src/img/11.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../src/img/car1.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../src/img/car2.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../src/img/car3.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../src/img/car4.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../src/img/car5.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../src/img/car6.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../src/img/car7.jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Предыдущий</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Следующий</span>
-                        </button>
-                      </div>
-                </div>
-            </div>
-        </section>
-        <section class="map">
-            <div class="lin"></div>
-            <div class="container">
-                <div class="first col-md-10 offset-md-1">
-                    <div class="container">
-                        <div id="g2" class="nachmap">Где мы находимся?</div>
-                        <br>
-                        <br>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1605.8530289547382!2d73.29837854300715!3d55.02532853172176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43ab004095767fb5%3A0x35cc95cb72ea53cc!2sRebel!5e0!3m2!1sru!2sru!4v1689796457313!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>      
-            </div> 
 
-        </section>
-        <section class="footer">
-            <div class="lin2"></div>
-                <div class="container">
-                    <a href="https://vk.com/rebel555" class="sslk"><img src="../src/img/vk.png" alt=""> Мы в Вконтакте</a>
-                    <a href="https://www.instagram.com/rebel_lounge/" class="sslk"><img src="../src/img/inst.png" alt=""> Мы в инсте</a>
-                    <div class="off">Официальная страница Rebel  ⓒ</div>
-                </div>
-            </div>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    </body>
-    </html>
+    
+
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section faq">
+    <h2>FAQ</h2>
+    <h3>Законность майнинга</h3>
+    <p>Майнинг криптовалют в нашей стране является разрешённой деятельностью, что подтверждается действующим законодательством. Мы строго соблюдаем все нормативные акты и требования, регулирующие деятельность в сфере цифровых активов и блокчейн-технологий.
+
+Однако важно отметить, что законодательство в области криптовалют постоянно развивается и может претерпевать изменения. Мы внимательно следим за актуальными нормативными актами, новыми законами и постановлениями, чтобы обеспечить полное соответствие нашей деятельности действующему правовому полю.
+
+Наша команда прилагает все усилия для соблюдения законодательства, включая получение необходимых разрешений и лицензий, а также внедрение внутренних процедур для обеспечения прозрачности и безопасности работы фермы.
+
+Если у вас возникнут вопросы относительно правового статуса майнинга или изменений в законодательстве, мы готовы предоставить актуальную информацию и консультации.</p>
+
+    <h3>Энергопотребление</h3>
+    <p>Наши майнинговые установки потребляют примерно 3 кВт электроэнергии каждая. Мы уделяем особое внимание энергоэффективности и используем современные методы оптимизации для снижения затрат на электроэнергию. Это позволяет нам не только повысить экономическую эффективность работы фермы, но и минимизировать воздействие на окружающую среду.
+
+        Мы постоянно ищем новые решения и технологии, направленные на снижение энергопотребления без потери производительности, что делает нашу деятельность более устойчивой и выгодной. В рамках нашей политики мы стремимся к максимально рациональному использованию ресурсов и соблюдению экологических стандартов.</p>
+
+    <h3>Экология</h3>
+    <p>Мы не просто "парим воздух" — мы занимаемся добычей криптовалют, применяя современные и экологически ответственное подходы. Наша цель — обеспечить эффективную работу фермы при минимальном воздействии на природу, поддерживая баланс между технологическим прогрессом и заботой об окружающей среде.</p>
+</section>
+
+<!-- Контакты -->
+<section id="contacts" class="section">
+    <h2>Контакты</h2>
+    <form>
+        <input type="text" placeholder="Имя">
+        <input type="email" placeholder="Email">
+        <textarea rows="5" placeholder="Сообщение"></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+    <p>Телефон: +7 (999) 123-45-67</p>
+    <p>Email: info@miningdominion.com</p>
+</section>
+
+<footer>
+    © 2025 MiningDominion — Все права защищены
+</footer>
+
+<script src="js\script.js"></script>
+</body>
+</html>

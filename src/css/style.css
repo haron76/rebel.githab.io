@@ -1,192 +1,454 @@
-*{
-    font-family: 'Roboto', sans-serif;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
 }
 
-header{
-    
-    position: fixed;
-    width: 100%;
-    height: 51px;
-    background-color: #000000;
-    z-index: 2;
-}
-
-.menu{
+/* ================= HEADER ================= */
+header {
+    background-color: #0d0d0d;
     display: flex;
     justify-content: space-between;
-    list-style: none;
-    margin: 0;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
 }
 
-.logot{
-    width: 30px;
-    height: 30px;
-
-}
-
-nav{
-    padding: 13px 70px;
-}
-
-.menu .menu_items .menu_link{
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 300;
-    color: #ffffff;
-    border-right: 2px dotted black;
-    padding-right: 40px;
-}
-.promo{
-    position: relative;
-    top: 50px;
-    height: 710px;
-    background: url('../img/zz.jpg') center center/cover no-repeat ;
-
-}
-
-.nach{
-
-    font-size: 60px;
-    line-height: 80px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.nach2{
-    margin-top: 10px;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.text-nach{
-
-    font-size: 18px;
-    line-height: 24px;
-    width: 600px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-.text-nach2{
-
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-a {
-    color: #0db8fd;
-    text-decoration: blink;
-}
-
-.btnpoz{
-    margin-top: 150px;
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 100;
-    text-align: center;
-    
-}
-
-.text-str{
-    margin-top: 150px;
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 100;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-align: center;
-}
-
-.strelka{
-    display: block;
-    width: 30px;
-    height: 19px;
-    margin: 0 auto;
-}
-
-.soder{
-    position: relative;
-    top: 50px;
-    height: 710px;
-    background:  url('../img/xx.JPG') center center/cover no-repeat ;
-
-}
-
-.nach22{
-    text-align: center;
-    font-size: 60px;
-    line-height: 80px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #ffffff;
-
-}
-
-.text-nach22{
-    text-align: center;
-    font-size: 18px;
-    line-height: 24px;
-    
-    font-weight: 400;
-    color: #ffffff;
-}
-
-.lin{
-    height: 40px;
-    width: 100%;
-    background-color: rgb(14, 12, 12);
-
-}
-
-.galer{
-    position: relative;
-    top: 50px;
-    height: 1080px;
-    background-color: black;
-
-}
-
-.map{
-    position: relative;
-    top: 50px;
-    height: 700px;
-    background-color: rgb(255, 255, 255);
-
-}
-
-.nachmap{
-    text-align: center;
-    font-size: 60px;
-    line-height: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.footer{
-    position: relative;
+header img {
     height: 50px;
-    background-color: rgb(255, 255, 255);
 }
 
-.lin2{
-    height: 5px;
-    width: 100%;
-    background-color: rgb(14, 12, 12);
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    color: #00ff00;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* ================= HERO ================= */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('../img/hero.jpg') no-repeat center center/cover;
+    
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #00ff00;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ffffff;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero button {
+    background-color: #00ff00;
+    color: #121212;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ================= WIDGET ================= */
+.widget {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.widget div {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+}
+
+/* ================= FAQ ================= */
+.faq {
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.faq h3 {
+    color: #00ff00;
+}
+
+/* ================= FORM ================= */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #00ff00;
+    color: #121212;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0d0d0d;
+    margin-top: 30px;
+    color: #777;
+}
+
+/* ================= АДАПТИВ ================= */
+max-width: 768px {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .widget {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .widget div {
+        min-width: unset;
+        width: 100%;
+    }
+}
+
+max-width: 480px {
+    header nav a {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+}
+/* Бургер по умолчанию скрыт */
+.burger {
+    display: none;
+    font-size: 28px;
+    color: #00ff00;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1001; /* чтобы бургер был выше меню */
+}
+/* Для мобильных экранов */
+max-width: 768px {
+    nav {
+        position: fixed;
+        top: 0;
+        right: -250px; /* спрятано за экраном */
+        height: 100%;
+        width: 250px;
+        background-color: #0d0d0d;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        transition: right 0.3s ease-in-out; /* плавный выезд */
+        box-shadow: -5px 0 15px rgba(0, 255, 0, 0.2);
+        z-index: 1000;
+    }
+
+    nav a {
+        padding: 15px;
+        border-bottom: 1px solid #1a1a1a;
+        color: #00ff00;
+        text-align: left;
+    }
+
+    nav.show {
+        right: 0; /* выезд на экран */
+    }
+
+    .burger {
+        display: block;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Киберпанковый апгрейд для хедера */
+header {
+    background-color: rgba(0, 0, 0, 0.4); /* Прозрачный фон */
+    backdrop-filter: blur(6px); /* Размытие фона */
+    border-bottom: 1px solid rgba(0, 255, 157, 0.3); /* Неоновая граница снизу */
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.4); /* Лёгкое свечение */
+}
+
+/* Логотип */
+header .logo {
+    color: #00ff9d !important; /* Неоновый цвет */
+    text-shadow: 0 0 5px #00ff9d, 0 0 10px #00ff9d;
+}
+
+/* Ссылки в меню */
+header nav a {
+    color: #00ff9d !important;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header nav a:hover {
+    color: #fff !important;
+    text-shadow: 0 0 5px #00ff9d, 0 0 10px #00ff9d, 0 0 20px #00ff9d;
+}
+
+
+
+.vhod {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('../img/vhod.png') no-repeat center center/cover;
+    
+}
+
+.vhod button {
+    background-color: #00ff00;
+    color: #121212;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.modal-content{
+    background: rgb(255, 255, 255);
 
 }
 
-.sslk{
-    text-decoration:none ;
-    color: #000000;
+.login-box {
+margin: 0 auto;
+width: 400px;
+padding: 40px;
+background: rgba(0,0,0,.5);
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+border-radius: 10px;
 }
 
-.off{
-    text-align: right;
+.login-box h2 {
+margin: 0 0 30px;
+padding: 0;
+color: #fff;
+text-align: center;
+}
+
+.login-box .user-box {
+position: relative;
+}
+
+.login-box .user-box input {
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+background: transparent;
+}
+.login-box .user-box label {
+position: absolute;
+top:0;
+left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+pointer-events: none;
+transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+top: -20px;
+left: 0;
+color: #03e9f4;
+font-size: 12px;
+}
+
+.login-box form a {
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+color: #03e9f4;
+font-size: 16px;
+text-decoration: none;
+text-transform: uppercase;
+overflow: hidden;
+transition: .5s;
+margin-top: 40px;
+letter-spacing: 4px
+}
+
+.login-box a:hover {
+background: #03e9f4;
+color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 5px #03e9f4,
+            0 0 25px #03e9f4,
+            0 0 50px #03e9f4,
+            0 0 100px #03e9f4;
+}
+
+.login-box a span {
+position: absolute;
+display: block;
+}
+
+.login-box a span:nth-child(1) {
+top: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg, transparent, #03e9f4);
+}
+
+.login-box a span:nth-child(2) {
+top: -100%;
+right: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(180deg, transparent, #03e9f4);
+}
+
+.login-box a span:nth-child(3) {
+bottom: 0;
+right: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(270deg, transparent, #03e9f4);
+}
+
+
+.login-box a span:nth-child(4) {
+bottom: -100%;
+left: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(360deg, transparent, #03e9f4);
+}
+
+/* KEYFRAMES */
+
+@keyframes btn-anim1 {
+0% {
+    left: -100%;
+}
+50%,100% {
+    left: 100%;
+}
+}
+
+@keyframes btn-anim2 {
+0% {
+    top: -100%;
+}
+50%,100% {
+    top: 100%;
+}
+}
+
+@keyframes btn-anim3 {
+0% {
+    right: -100%;
+}
+50%,100% {
+    right: 100%;
+}
+}
+
+@keyframes btn-anim4 {
+0% {
+    bottom: -100%;
+}
+50%,100% {
+    bottom: 100%;
+}
+}
+
+/* USING KEYFRAMES */
+
+.login-box a span:nth-child(1) {
+animation: btn-anim1 1s linear infinite;
+}
+
+.login-box a span:nth-child(2) {
+animation: btn-anim2 1s linear infinite;
+animation-delay: .25s
+}
+
+.login-box a span:nth-child(3) {
+animation: btn-anim3 1s linear infinite;
+animation-delay: .5s
+}
+
+.login-box a span:nth-child(4) {
+animation: btn-anim4 1s linear infinite;
+animation-delay: .75s
 }
